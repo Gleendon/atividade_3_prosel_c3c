@@ -4,19 +4,25 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../style.css">
    <title>Sistema de Notas</title>
 </head>
 <body>
+      
+   <section class="principal">
+      <h1>Sistema de Notas</h1>
+      
+      <section class="principal__container">
+         <label class="input__titulo" for="nota">Informe a nota do Aluno (0 a 100)</label>
+         <input type="number" name="nota" id="nota">
+         <button id="botaoVerificar" class="botaoVerificar">Verificar</button>
+         <span id="respostaTexto" class="respostaTexto">A nota do Aluno é: </span>
+      </section>
+      
+      <a href="../index.html"><button>Voltar Para Index</button></a>
+   </section>
 
-<section>
-   <h3>Sistema de Notas</h3>
-   <label for="nota">Informe a nota do Aluno (0 a 100)</label>
-   <input type="number" name="nota" id="nota">
-   <button id="botaoVerificar" class="botaoVerificar">Verificar</button>
-   <span id="respostaTexto" class="respostaTexto">A nota do Aluno é: </span>
-</section>
-
-<script src="q3.js"></script>
+   <script src="q3.js"></script>
    
 </body>
 </html>

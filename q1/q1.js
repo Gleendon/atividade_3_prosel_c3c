@@ -17,9 +17,12 @@ botaoResposta.addEventListener("click", ()=>{
    let lado1 = document.querySelector("#lado1").value;
    let lado2 = document.querySelector("#lado2").value;
    let lado3 = document.querySelector("#lado3").value;
-
-   let tipo = tipoTriangulo(lado1, lado2, lado3);
-
    const resposta = document.querySelector("#respostaTexto");
-   resposta.innerHTML = `O tipo de triângulo é: ${tipo}`;
+
+   if(lado1 <= 0 || lado1 == "" || lado2 <= 0 || lado2 == "" || lado3 <= 0 || lado3 == ""){
+      resposta.innerHTML = `Verificar os valores inseridos`;
+   }else{
+      let tipo = tipoTriangulo(lado1, lado2, lado3);
+      resposta.innerHTML = `O tipo de triângulo é: ${tipo}`;
+   }
 })

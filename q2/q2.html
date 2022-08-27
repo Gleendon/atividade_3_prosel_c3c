@@ -4,23 +4,27 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../style.css">
    <title>Bhaskara</title>
 </head>
 <body>
-   
-   <h2>Calculando Bhaskara</h2>
-   <section>
-      <h3>Digite os valores da equação</h3>
-      <p>Sendo a equação de segundo grau: ax² - bx + c </p>
-      <label for="termoA">a</label>
-      <input type="number" name="termoA" id="termoA">
-      <label for="termoB">b</label>
-      <input type="number" name="termoB" id="termoB">
-      <label for="termoC">c</label>
-      <input type="number" name="termoC" id="termoC">
-      <button id="botaoResposta" class="botaoResposta">Resposta</button>
-      <span id="respostaTexto" class="respostaTexto">A resposta é: </span>
-
+      
+   <section class="principal">
+      <h1>Calculando Bhaskara</h1>
+      
+      <section class="principal__container">
+         <p>Digite os valores da equação de segundo grau: ax² - bx + c </p>
+         <label class="input__titulo" for="termoA">a</label>
+         <input type="number" name="termoA" id="termoA">
+         <label class="input__titulo" for="termoB">b</label>
+         <input type="number" name="termoB" id="termoB">
+         <label class="input__titulo" for="termoC">c</label>
+         <input type="number" name="termoC" id="termoC">
+         <button id="botaoResposta" class="botaoResposta">Resposta</button>
+         <span id="respostaTexto" class="respostaTexto">A resposta é: </span>
+      </section>
+      
+      <a href="../index.html"><button>Voltar Para Index</button></a>
    </section>
 
    <script src="q2.js"></script>
